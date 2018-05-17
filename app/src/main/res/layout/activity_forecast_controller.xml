@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:background="@drawable/forecast_background"
+    >
+
+    <TextView
+        android:id="@+id/day3"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/day2"
+        android:layout_marginTop="28dp"
+        android:text="NA"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="30sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/day2"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/day1"
+        android:layout_marginTop="23dp"
+        android:text="NA"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="30sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/day1"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/temp1"
+        android:layout_marginTop="15dp"
+        android:text="NA"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="30sp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/conIcon3"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/day3"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="This is the weather symbol"
+        android:src="@drawable/dunno"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/conIcon2"
+        android:layout_width="100dp"
+
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/conIcon3"
+        android:layout_alignTop="@+id/day2"
+        android:contentDescription="This is the weather symbol"
+        android:src="@drawable/dunno"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/conIcon1"
+        android:layout_width="100dp"
+
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/conIcon2"
+        android:layout_alignTop="@+id/day1"
+        android:contentDescription="This is the weather symbol"
+        android:src="@drawable/dunno"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/temp3"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/conIcon3"
+        android:text="NA"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="30sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/temp2"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/conIcon2"
+        android:text="NA"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="30sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/temp1"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/forecastQueryET"
+        android:layout_marginTop="37dp"
+        android:text="NA"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="30sp"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forecastBackButton"
+        android:src="@drawable/left"
+        android:background="@null"
+        android:contentDescription="Dismiss Forecast Screen"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:id="@+id/forecastQueryET"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/getWeatherTV"
+        android:layout_marginTop="19dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="Enter city name"
+        android:imeOptions="actionGo"
+        android:inputType="textAutoCorrect"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/getWeatherTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forecastBackButton"
+        android:layout_centerHorizontal="true"
+        android:text="Forecast City"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorWhite"
+        android:textSize="50sp" />
+
+</RelativeLayout>
